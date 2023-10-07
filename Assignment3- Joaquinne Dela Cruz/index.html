@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Montserrat Google Font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Assignment 1 - Joaquinne Dela Cruz</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/omsim-essentials-logo.png" alt="Omsim Logo">
+        </div>
+        <section class="menu">
+
+            <ul class="menu-list">
+                <li>Home</li>
+                <li class="active">Products</li>
+                <li>About Us</li>
+                <li>Contacts</li>
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+    <section class="main">
+
+        <section class="left">
+            <p class="title">Grooming made <strong> simple and stress-free!</strong></p>
+            <p class="msg">Your all-in-one pet grooming solution! Shower, massage, brush, shampoo, rinse, jet, mist, and dry with ease.</p>
+            <button class="cta"><span>Buy now</span>
+                <i class="fas fa-angle-right"></i></button>
+        </section>
+
+        <section class="right">
+            <img src="./images/Green.png" alt="Shoes">
+            <div class="colors">
+                <div class="item green active">
+                    <div class="color-selector"></div>
+                    <div class="additional-info">
+                        <p>GREEN</p>
+                        <p>$49.99</p>
+                    </div>
+                    <img src="./images/green_small.png">
+                </div>
+                <div class="item blue">
+                    <div class="color-selector"></div>
+                    <img src="./images/blue_small.png">
+                </div>
+                <div class="item yellow">
+                    <div class="color-selector"></div>
+                    <img src="./images/yellow_small.png">
+                </div>
+            </div>
+        </section>
+        
+    </section>
+    <div class="container">
+
+        <h1 class="heading">WHY BUY FROM US?</h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="./images/icon-1.png" alt="">
+                <h3>Customer First - 24/7 Customer Serivce</h3>
+                <p>100% satisfaction guarantee. We only deliver the best.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+    
+            <div class="box">
+                <img src="./images/icon-2.png" alt="">
+                <h3>Don't like it or Something wrong with the product?</h3>
+                <p>30 Day Money Back Guarantee</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+    
+            <div class="box">
+                <img src="./images/icon-3.png" alt="">
+                <h3>Omsim Essential Anywhere</h3>
+                <p>We do worldwide shipping. Standard Rates may apply. <br> Free shipping nationwide</br></p>
+                <a href="#" class="btn">read more</a>
+            </div>
+    
+        </div>
+        <div class="back-button">
+            <a href="../index.html" target="_blank">Back to Compilation Page</a>
+        </div>
+    </div>
+    
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', ()=> {
+            menu.classList.toggle('opened')
+        })
+    </script>
+</body>
+
+</html>
